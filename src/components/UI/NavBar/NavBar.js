@@ -10,19 +10,19 @@ class NavBar extends Component {
 				<Menu.Item
 					name='home'
 					active={this.props.activeItem === 'home'}
-					onClick={this.handleItemClick}
+					onClick={(event) => {this.handleItemClick(event, 'home')}}
 				>
 					Home
 				</Menu.Item>
 
-				<Menu.Item name='about-us' active={this.props.activeItem === 'about-us'} onClick={this.props.handleItemClick}>
+				<Menu.Item name='about-us' active={this.props.activeItem === 'about-us'} onClick={(event) => {this.handleItemClick(event, 'about-us')}}>
 					About Us
 				</Menu.Item>
 
 				<Menu.Item
 					name='login'
 					active={this.props.activeItem === 'login'}
-					onClick={this.props.handleItemClick}
+					onClick={(event) => {this.handleItemClick(event, 'login')}}
 				>
 					Login
 				</Menu.Item>
