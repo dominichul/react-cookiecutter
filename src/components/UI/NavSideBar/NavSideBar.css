@@ -1,18 +1,24 @@
 .NavSideBar {
-    height: calc(100% - 60px);
+    display: inline-block;
+    width: 100%;
 }
 
 .NavSideBarPanel {
     background-color: #fce181 !important;
+    position: absolute !important;
 }
 
 .NavSideBarContent {
     margin-left: 150px !important;
-    background-color: #eee !important;
+    background-color: #ddd !important;
 }
 
 .Pusher {
     min-height: calc(100vh - 80px);
-    background-color: #aaa0a0 !important;
+    background-color: #633e61 !important;
+}
+
+.Segment {
+    overflow-y: auto;
 }
 
