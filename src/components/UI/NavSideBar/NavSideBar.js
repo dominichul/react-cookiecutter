@@ -15,19 +15,8 @@ class NavSidebar extends Component {
 
     return (
       <div className={classes.NavSideBar}>
-        <Button onClick={this.handleButtonClick}>Toggle visibility</Button>
-
         <Sidebar.Pushable as={Segment}>
-          <Sidebar
-            as={Menu}
-            animation='overlay'
-            icon='labeled'
-            inverted
-            onHide={this.handleSidebarHide}
-            vertical
-            visible={visible}
-            width='thin'
-          >
+           <Sidebar className={classes.Pusher} as={Menu} animation='overlay' icon='labeled' inverted vertical visible width='thin'>
             <Menu.Item as='a'>
               <Icon name='home' />
               Home
@@ -36,16 +25,15 @@ class NavSidebar extends Component {
               <Icon name='arrow right' />
               Login
             </Menu.Item>
-            <Menu.Item as='a'>
+            <Menu.Item as='a' color='white'>
               <Icon name='camera' />
               Channels
             </Menu.Item>
           </Sidebar>
 
-          <Sidebar.Pusher>
+          <Sidebar.Pusher className={classes.NavSideBarContent}>
             <Segment basic>
               <Header as='h3'>Application Content</Header>
-              <Image src='/images/wireframe/paragraph.png' />
             </Segment>
           </Sidebar.Pusher>
         </Sidebar.Pushable>

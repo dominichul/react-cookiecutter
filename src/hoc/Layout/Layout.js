@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import NavBar from '../../components/UI/NavBar/NavBar';
 import NavSideBar from "../../components/UI/NavSideBar/NavSideBar";
 import classes from './Layout.css';
+import { Container } from 'semantic-ui-react';
 
 class Layout extends Component {
 
@@ -22,6 +23,7 @@ class Layout extends Component {
 				<NavSideBar>
 					{this.props.children}
 				</NavSideBar>
+				<Container fluid className={classes.Footer}></Container>
 			</div>
 		);
 	}

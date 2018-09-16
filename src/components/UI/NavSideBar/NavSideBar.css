@@ -1,3 +1,18 @@
 .NavSideBar {
-    height: 100%;
+    height: calc(100% - 60px);
 }
+
+.NavSideBarPanel {
+    background-color: #fce181 !important;
+}
+
+.NavSideBarContent {
+    margin-left: 150px !important;
+    background-color: #eee !important;
+}
+
+.Pusher {
+    min-height: calc(100vh - 80px);
+    background-color: #aaa0a0 !important;
+}
+
