@@ -9,6 +9,7 @@ class NavBar extends Component {
 	render() {
 		return (
 			<Menu className={classes.NavBar}>
+				<Menu.Menu position="left">
 				<Menu.Item
 					name='home'
 					className={classes.NavBarLink}
@@ -26,7 +27,20 @@ class NavBar extends Component {
 				}}>
 					About Us
 				</Menu.Item>
-
+				</Menu.Menu>
+				<Menu.Menu>
+					<Menu.Item
+					name='home'
+					active={this.props.activeItem === 'home'}
+					onClick={(event) => {
+						this.handleItemClick(event, 'home')
+					}}
+					className={classes.NavBarLink}
+				>
+					LOGO
+				</Menu.Item>
+				</Menu.Menu>
+				<Menu.Menu position='right'>
 				<Menu.Item
 					name='login'
 					active={this.props.activeItem === 'login'}
@@ -37,6 +51,7 @@ class NavBar extends Component {
 				>
 					Login
 				</Menu.Item>
+				</Menu.Menu>
 			</Menu>
 		);
 	}

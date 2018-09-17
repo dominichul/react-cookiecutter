@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
-import Layout from './hoc/Layout/Layout';
+import View from './hoc/View/View';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div style={{height: "100%"}}>
-		<Layout style={{height: "100%"}}>
-		</Layout>
+		<View style={{height: "100%"}}/>
       </div>
     );
   }

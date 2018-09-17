@@ -13,6 +13,10 @@
     background-color: #ddd !important;
 }
 
+.NavSideBarContentNoAuth {
+    margin-left: 0 !important;
+}
+
 .Pusher {
     min-height: calc(100vh - 80px);
     background-color: #633e61 !important;
